@@ -2,14 +2,16 @@
 :root {
   --bg-color: #e2e3e5;
   --primary-color: #fff176;
+  --dark: black;
   --titleSize: clamp(1rem, 3vw + 1rem, 3rem);
   --secondaryTitleSize: 2.5rem;
   --subTitleSize: 1.4rem;
   --titlePadding: 100px 50px 50px 50px;
+  --servicesInfoPadding: 0px 50px 50px 50px;
   --regularPading: 20px;
   --typewriterSpeed: 4s;
   --typewriterCharacters: 31;
-  --dark: black;
+  
 }
 
 
@@ -72,6 +74,7 @@ h2 {
   justify-content: end;
   padding: var(--titlePadding);
   font-size: var(--secondaryTitleSize);
+  font-weight: inherit;
 }
 
 p {
@@ -220,11 +223,21 @@ nav li:hover::before {
 }
 
 
+.services-title {
+  padding: var(--titlePadding);
+  font-size: var(--secondaryTitleSize);
+}
 
+.services-subtext {
+  font-size: var(--subTitleSize);
+  font-weight: lighter;
+  padding: var(--servicesInfoPadding);
+}
 
-
-
-
+.card-container {
+  display: flex;
+  justify-content: center;
+}
 
 
 /*<!-----   Animation   ----->*/
