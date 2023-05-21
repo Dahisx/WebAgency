@@ -1,6 +1,10 @@
-const menuToggle = document.querySelector(".menu-toggle");
-const nav = document.querySelector("nav");
 
-menuToggle.addEventListener("click", () => {
-  nav.classList.toggle("show");
+$('input').on('focusin', function() {
+  $(this).parent().find('label').addClass('active');
+});
+ 
+$('input').on('focusout', function() {
+  if (!this.value) {
+    $(this).parent().find('label').removeClass('active');
+  }
 });

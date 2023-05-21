@@ -1,7 +1,7 @@
 /*<----- Root ----->*/
 :root {
   --bg-color: #e2e3e5;
-  --primary-color: #fff176;
+  --primary-color: #c9b60d/*#fff176;*/;
   --dark: black;
   --titleSize: clamp(1rem, 3vw + 1rem, 3rem);
   --secondaryTitleSize: 2.5rem;
@@ -11,13 +11,7 @@
   --regularPading: 20px;
   --typewriterSpeed: 4s;
   --typewriterCharacters: 31;
-  
 }
-
-
-
-
-
 
 
 
@@ -71,7 +65,7 @@ h2 {
   margin-top: 0;
   margin-bottom: 0;
   display: flex;
-  justify-content: end;
+
   padding: var(--titlePadding);
   font-size: var(--secondaryTitleSize);
   font-weight: inherit;
@@ -226,6 +220,8 @@ nav li:hover::before {
 .services-title {
   padding: var(--titlePadding);
   font-size: var(--secondaryTitleSize);
+  display: flex;
+  justify-content: center;
 }
 
 .services-subtext {
@@ -238,6 +234,11 @@ nav li:hover::before {
   display: flex;
   justify-content: center;
 }
+
+
+/*<--  Contact Section    -->*/
+
+
 
 
 /*<!-----   Animation   ----->*/
